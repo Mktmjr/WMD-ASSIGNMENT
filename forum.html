@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Same head as media.html -->
+</head>
+<body>
+  <!-- Same navbar as media.html -->
+  
+  <section class="forum py-5 bg-light">
+    <div class="container">
+      <div class="d-flex justify-content-between mb-4">
+        <h1>Mentorship Forum</h1>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newPostModal">
+          <i class="fas fa-plus me-2"></i>New Post
+        </button>
+      </div>
+      
+      <div class="mb-4">
+        <input type="text" class="form-control" placeholder="Search topics...">
+      </div>
+      
+      <div class="list-group" id="forum-posts">
+        <!-- Populated by forum.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- New Post Modal (simulated) -->
+  <div class="modal fade" id="newPostModal">
+    <!-- Similar to media upload modal -->
+  </div>
+
+  <!-- Same footer as media.html -->
+  <script src="forum.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+jci-platform/
+├── index.html       Homepage
+├── styles.css       Custom CSS
+├── media.js         Media gallery logic (Day 1)
+└── forum.js         Mentorship forum (Day 2)

@@ -1,0 +1,110 @@
+/* JCI Gaborone Color Scheme */
+:root {
+    --jci-light-blue: #6ec1e4;       /* Primary light blue */
+    --jci-gold: #ffd700;             /* Accent gold */
+    --jci-dark: #2c3e50;             /* Dark blue for text/dark mode */
+    --jci-light: #f8f9fa;            /* Light background */
+  }
+  
+  /* Light Mode (Default) */
+  body {
+    background-color: var(--jci-light);
+    color: var(--jci-dark);
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  /* Dark Mode */
+  body.dark-mode {
+    background-color: var(--jci-dark);
+    color: var(--jci-light);
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: var(--jci-light-blue) !important;
+  }
+  .navbar-brand img {
+    height: 40px; /* Adjust logo size */
+  }
+  
+  /* Gold Accents */
+  .btn-primary, .bg-primary {
+    background-color: var(--jci-gold) !important;
+    color: var(--jci-dark) !important;
+    border: none;
+  }
+  .btn-primary:hover {
+    opacity: 0.9;
+  }
+  
+  /* Dark Mode Toggle Button */
+  #darkModeToggle {
+    background: none;
+    border: none;
+    color: var(--jci-dark);
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  .dark-mode #darkModeToggle {
+    color: var(--jci-gold);
+  }
+  
+  /* Hero Section with Live Background (Replace with your video/image) */
+  .hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+                url('https://example.com/your-live-background.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+
+/* Media Gallery Specific Styles */
+.media-gallery {
+  background-color: var(--jci-light);
+}
+
+.media-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.media-card:hover {
+  transform: translateY(-5px);
+}
+
+.media-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.nav-pills .nav-link.active {
+  background-color: var(--jci-gold) !important;
+  color: var(--jci-dark) !important;
+}
+
+.nav-pills .nav-link {
+  color: var(--jci-dark);
+}
+
+/* Dark Mode Adjustments */
+.dark-mode .media-gallery {
+  background-color: var(--jci-dark);
+}
+
+.dark-mode .media-card {
+  background-color: #34495e;
+  color: white;
+}
+
+.dark-mode .nav-pills .nav-link {
+  color: var(--jci-light);
+}
+
+/* Elections Page */
+.elections .card { transition: all 0.3s; }
+.elections .card:hover { transform: scale(1.02); }
+
+/* Forum Page */
+.forum .list-group-item:hover { background-color: rgba(110, 193, 228, 0.1); }
