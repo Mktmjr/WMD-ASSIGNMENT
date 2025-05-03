@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Same head as media.html -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JCI Mentorship</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Same navbar as media.html -->
-  
-  <section class="forum py-5 bg-light">
+  <!-- Consistent Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-      <div class="d-flex justify-content-between mb-4">
-        <h1>Mentorship Forum</h1>
-        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newPostModal">
-          <i class="fas fa-plus me-2"></i>New Post
+      <a class="navbar-brand" href="index.html">
+        <img src="JCI_GABS_logo-removebg-preview.png" alt="JCI Logo" class="d-inline-block align-top logo-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="media.html">Media</a></li>
+          <li class="nav-item"><a class="nav-link" href="elections.html">Elections</a></li>
+          <li class="nav-item"><a class="nav-link active" href="forum.html">Mentorship</a></li>
+        </ul>
+        <button id="darkModeToggle" class="btn ms-3">
+          <i class="fas fa-moon"></i>
         </button>
       </div>
-      
-      <div class="mb-4">
-        <input type="text" class="form-control" placeholder="Search topics...">
-      </div>
-      
-      <div class="list-group" id="forum-posts">
-        <!-- Populated by forum.js -->
-      </div>
     </div>
-  </section>
+  </nav>
 
-  <!-- New Post Modal (simulated) -->
-  <div class="modal fade" id="newPostModal">
-    <!-- Similar to media upload modal -->
-  </div>
-
-  <!-- Same footer as media.html -->
+  <!-- Rest of your forum.html content remains the same -->
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="forum.js"></script>
 </body>
 </html>
